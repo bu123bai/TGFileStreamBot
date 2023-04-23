@@ -34,7 +34,7 @@ class Var(object):
     DEBUG = str(environ.get("DEBUG", "0").lower()) in ("1", "true", "t", "yes", "y")
     USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "0").lower()) in ("1", "true", "t", "yes", "y")
     ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "") or "").split(",") if x.strip("@ ")]
-    HEROKU_EMAIL = tipirnenisrikar123@yahoo.com
-    HEROKU_API_KEY = 9ee02b1c-dac4-4b32-9499-a320a14715cb
-    HEROKU_APP_NAME = filetolinkus
-    FQDN = filetolinkus.herokuapp.com
+    HEROKU_EMAIL = "tipirnenisrikar123@yahoo.com"
+    HEROKU_API_KEY = "9ee02b1c-dac4-4b32-9499-a320a14715cb"
+    HEROKU_APP_NAME = "filetolinkus"
+    FQDN = "filetolinkus.herokuapp.com"

@@ -12,7 +12,7 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(environ.get("API_ID", 29189916))
     API_HASH = str(environ.get("API_HASH","1b22031190ccfc4c1e3a394267a5526a"))
-    BOT_TOKEN = str(environ.get("BOT_TOKEN","6207970981:AAHAnDMdHmuCh2o0zVL8s9Hq9Nd3Yazv7ZA"))
+    BOT_TOKEN = str(environ.get("BOT_TOKEN","5990573465:AAHMzT_pXP3zMOwjcwhwp-qhmraT1NTtSRI"))
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     WORKERS = int(environ.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     BIN_CHANNEL = int(environ.get("BIN_CHANNEL", -1001921250376) # you NEED to use a CHANNEL when you're using MULTI_CLIENT

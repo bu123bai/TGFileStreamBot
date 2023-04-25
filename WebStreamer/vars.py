@@ -10,13 +10,13 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(environ.get("API_ID","29189916"))
+    API_ID = int(environ.get"API_ID","29189916"
     API_HASH = str(environ.get("API_HASH","1b22031190ccfc4c1e3a394267a5526a"))
     BOT_TOKEN = str(environ.get("BOT_TOKEN","6177117681:AAGc6DWxh3oczqvCPaQPdi-oNzkOtu1EFNk"))
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     WORKERS = int(environ.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     BIN_CHANNEL = int(
-        environ.get("BIN_CHANNEL", "-1001921250376")
+        environ.get"BIN_CHANNEL", "-1001921250376"
     )  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
     PORT = int(environ.get("PORT", 8080))
     BIND_ADDRESS = str(environ.get("WEB_SERVER_BIND_ADDRESS", "0.0.0.0"))
@@ -33,8 +33,4 @@ class Var(object):
     KEEP_ALIVE = str(environ.get("KEEP_ALIVE", "0").lower()) in  ("1", "true", "t", "yes", "y")
     DEBUG = str(environ.get("DEBUG", "0").lower()) in ("1", "true", "t", "yes", "y")
     USE_SESSION_FILE = str(environ.get("USE_SESSION_FILE", "0").lower()) in ("1", "true", "t", "yes", "y")
-    ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "") or "").split(",") if x.strip("@ ")]
-    HEROKU_EMAIL = "tipirnenisrikar123@yahoo.com"
-    HEROKU_API_KEY = "9ee02b1c-dac4-4b32-9499-a320a14715cb"
-    HEROKU_APP_NAME = "filetolinkus"
-    FQDN = "filetolinkus.herokuapp.com"
+    ALLOWED_USERS = [x.strip("@ ") for x in str(environ.get("ALLOWED_USERS", "") or "").split(",") if x.strip("@ ")
